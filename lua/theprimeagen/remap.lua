@@ -49,3 +49,17 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+vim.keymap.set("n", "<C-b>", function ()
+    vim.cmd("NvimTreeToggle")
+end)
+
+vim.keymap.set("n", "<C-PageUp>", function()
+    vim.cmd("tabprevious")
+end)
+
+vim.keymap.set("n", "<C-PageDown>", function()
+    vim.cmd("tabnext")
+end)
+
+vim.keymap.set("n", "gu", "<cmd>diffget //2<CR>")
+vim.keymap.set("n", "gh", "<cmd>diffget //3<CR>")
